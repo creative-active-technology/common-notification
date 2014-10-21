@@ -17,4 +17,6 @@ public class NotificationErrorConstant {
     public static final String DHFR_EML_ERROR_0005 = "DHFR_EML_ERROR_0005: No Template Configured";
     public static final String DHFR_EML_ERROR_0006 = "DHFR_EML_ERROR_0006: Unable to Generate Template";
     public static final String DHFR_EML_ERROR_0007 = "DHFR_EML_ERROR_0007: Parameter is not instanceof TemplateNotificationModel";
+    
+
 }

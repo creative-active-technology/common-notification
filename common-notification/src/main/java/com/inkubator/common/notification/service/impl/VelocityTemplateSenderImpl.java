@@ -51,7 +51,7 @@ public class VelocityTemplateSenderImpl implements VelocityTemplateSender {
                 messages.setTo(velocityTempalteModel.getTo());
                 messages.setFrom(velocityTempalteModel.getFrom());
                 messages.setCc(velocityTempalteModel.getCc());
-                messages.setBcc(velocityTempalteModel.getBcc());
+//                messages.setBcc(velocityTempalteModel.getBcc());
                 messages.setSubject(velocityTempalteModel.getSubject());
                 messages.setSentDate(new Date());
                 if (!(velocityTempalteModel.getFileToAttach().isEmpty())) {
