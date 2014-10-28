@@ -11,7 +11,7 @@ import org.springframework.core.io.InputStreamSource;
 
 /**
  *
- * @author Deni Husni FR
+ * @author Deni Husni FR, rizkykojek
  */
 public class NotificationModel {
 
