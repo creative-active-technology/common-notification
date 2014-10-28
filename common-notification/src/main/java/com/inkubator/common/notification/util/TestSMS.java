@@ -9,6 +9,8 @@ import com.inkubator.common.notification.NotificationConstant;
 import com.inkubator.common.notification.model.SmsModel;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import org.smslib.AGateway;
 import org.smslib.AGateway.GatewayStatuses;
 import org.smslib.AGateway.Protocols;
@@ -199,22 +201,26 @@ public class TestSMS {
 //            e.printStackTrace();
 //        }
             SmsModel model = new SmsModel();
-            model.setBaudRate(921600);
-            model.setComPort("COM5");
+            model.setBaudRate(115200);
+            model.setComPort("COM18");
             model.setDeliveryType(NotificationConstant.SYNCRONOUS);
-            model.setDestinationPhone("6285295462276");
+            model.setDestinationPhone("087887051607");
             model.setIsFlasMessages(false);
             model.setIsInbound(true);
             model.setIstOutbound(true);
-            model.setManufacture("ZTE Corporation");
-            model.setModel("MFI");
-            model.setModemId("modem.com1");
+            model.setManufacture("WaveCom");
+            model.setModel("M1306B");
+            model.setModemId("modem1");
             model.setSimPin("0000");
-            model.setSmscNumber("+62818445009");
-            model.setMessages("Testsetset Perconbaaaaan");
+            model.setSmscNumber("+62818445009");//XL 
+//            Satelindo - SMSC Mentari dan Matrix = 62816124
+//Telkomsel - SMSC Telkomsel = 6281100000
+//Excelcom - SMSC XL = 62818445009
+//Indosat - SMSC IM3 = 62855000000 
+            model.setMessages("Dear Mr Andi </br> Tolong di Approve. HR SYSTEM");
             SMSServiceUtil.sendSMSOutBound(model);
         } catch (Exception ex) {
-//            Logger.getLogger(TestSMS.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(TestSMS.class.getName()).log(Level.SEVERE, null, ex);
         }
 //    }{
 //        TestSMS app = new TestSMS();
