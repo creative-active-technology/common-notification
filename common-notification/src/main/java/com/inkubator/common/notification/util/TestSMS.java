@@ -219,6 +219,8 @@ public class TestSMS {
 //Indosat - SMSC IM3 = 62855000000 
             model.setMessages("Dear Mr Andi </br> Tolong di Approve. HR SYSTEM");
             SMSServiceUtil.sendSMSOutBound(model);
+//            model.setMessages("Dear Mr Andi </br> Tolong di Approve. HsfsdfdsfR SYSTEM");
+//            mSServiceUtil.sendSMSOutBound(model);
         } catch (Exception ex) {
             Logger.getLogger(TestSMS.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -229,6 +231,6 @@ public class TestSMS {
 //        } catch (Exception e) {
 //            e.printStackTrace();
 //        }
-    
-}
+
+    }
 }
