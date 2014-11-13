@@ -47,13 +47,13 @@ public class SMSServiceUtil {
                 gateway.setSmscNumber(smscNumber);
                 Service.getInstance().addGateway(gateway);
                 Service.getInstance().startService();
-                OutboundMessage msg = new OutboundMessage("+6285939926838", "Test UP");
+                OutboundMessage msg = new OutboundMessage("+6287887051607", "Test UP");
                 msg.setFlashSms(false);
                 Service.getInstance().sendMessage(msg);
             }
 
             LOGGER.info("Gateway Running");
-        } catch (SMSLibException | IOException | InterruptedException ex) {
+        } catch (Exception ex) {
             LOGGER.error(ex, ex);
         }
     }
