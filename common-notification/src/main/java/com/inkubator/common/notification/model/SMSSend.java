@@ -15,6 +15,8 @@ public class SMSSend implements Serializable{
     private String from;
     private String destination;
     private String content;
+    private Double pricePerSms;
+    private String modemId;
 
     public String getFrom() {
         return from;
@@ -39,6 +41,23 @@ public class SMSSend implements Serializable{
     public void setContent(String content) {
         this.content = content;
     }
+
+    public Double getPricePerSms() {
+        return pricePerSms;
+    }
+
+    public void setPricePerSms(Double pricePerSms) {
+        this.pricePerSms = pricePerSms;
+    }
+
+    public String getModemId() {
+        return modemId;
+    }
+
+    public void setModemId(String modemId) {
+        this.modemId = modemId;
+    }
+    
     
     
 }

@@ -58,7 +58,7 @@
         </dependency>
         <dependency>
             <groupId>com.inkubator</groupId>
-            <artifactId>common-login</artifactId>
+            <artifactId>common-logging</artifactId>
             <version>1.0.0.RELEASE</version>
         </dependency>
         <dependency>
