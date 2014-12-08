@@ -67,14 +67,13 @@ public class SMSFullManageService {
 
         @Override
         public void process(AGateway gateway, Message.MessageTypes msgType, InboundMessage msg) {
-            LOGGER.info("Hahhahahahhahahahahhahha");
             if (msgType == Message.MessageTypes.INBOUND) {
-                LOGGER.info("Hahhahahahhahahahahhahha");
-                System.out.println(">>> New Inbound message detected from Gateway: " + gateway.getGatewayId());
+                LOGGER.info(">>> New Inbound message detected from Gateway: " + gateway.getGatewayId());
             } else if (msgType == Message.MessageTypes.STATUSREPORT) {
-                System.out.println(">>> New Inbound Status Report message detected from Gateway: " + gateway.getGatewayId());
+                LOGGER.info(">>> New Inbound message detected from Gateway: " + gateway.getGatewayId());
             }
-            System.out.println(msg);
+            
+            System.out.println(msg.getOriginator());
         }
     }
 
